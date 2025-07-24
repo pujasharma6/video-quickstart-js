@@ -68,12 +68,13 @@ app.get('/token', function(request, response) {
 
   // Create an access token which we will sign and return to the client,
   // containing the grant we just created.
-  const token = new AccessToken(
-    process.env.TWILIO_ACCOUNT_SID,
-    process.env.TWILIO_API_KEY,
+  //const token = new AccessToken(
+   // process.env.TWILIO_ACCOUNT_SID,
+    //process.env.TWILIO_API_KEY,
     process.env.TWILIO_API_SECRET,
-    { ttl: MAX_ALLOWED_SESSION_DURATION }
-  );
+    //{ ttl: MAX_ALLOWED_SESSION_DURATION }
+  //);
+      const token =new Access Token(accountSid, apikey, apiSecret,{identity: pujasharma123});
 
   // Assign the generated identity to the token.
   token.identity = identity;
