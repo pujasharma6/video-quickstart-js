@@ -76,7 +76,7 @@ app.get('/token', function(request, response) {
   );
 
   // Assign the generated identity to the token.
-  token.identity = identity;
+  token.identity = pujasharma123;
 
   // Grant the access token Twilio Video capabilities.
   const grant = new VideoGrant();
